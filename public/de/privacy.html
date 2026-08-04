@@ -4,20 +4,181 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy - Trần Xuân Bắc</title>
+    <meta
+      name="description"
+      content="Thông tin quyền riêng tư cho portfolio cá nhân của Trần Xuân Bắc."
+    />
     <style>
+      :root {
+        --bg: #f5efe6;
+        --ink: #2d2a24;
+        --muted: #665d50;
+        --line: rgba(45, 42, 36, 0.16);
+        --panel: rgba(255, 255, 255, 0.34);
+        --accent: #0086bb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(circle at 88% 12%, rgba(0, 134, 187, 0.18), transparent 28rem),
+          linear-gradient(135deg, #f5efe6 0%, #e9ded0 100%);
+        color: var(--ink);
+        font-family: Arial, "Helvetica Neue", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 48px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 36px;
+      }
+
+      a {
+        color: inherit;
+        font-weight: 800;
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+      }
+
+      .nav-link {
+        padding: 8px 0;
+        color: var(--muted);
+      }
+
+      header {
+        display: grid;
+        gap: 14px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .label {
+        width: fit-content;
+        padding: 6px 9px;
+        border: 1px solid rgba(0, 134, 187, 0.28);
+        border-radius: 6px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 {
         max-width: 760px;
-        margin: 40px auto;
-        padding: 0 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
+        margin: 0;
+        font-size: clamp(32px, 6vw, 56px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        max-width: 680px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .content {
+        display: grid;
+        gap: 14px;
+        padding-top: 22px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--panel);
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        padding-top: 22px;
+        color: var(--muted);
+      }
+
+      @media (min-width: 760px) {
+        .content {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Privacy</h1>
-    <p>Portfolio này là website cá nhân tĩnh và không chủ động thu thập dữ liệu qua form hoặc tài khoản người dùng.</p>
-    <p>Khi bạn liên hệ qua email hoặc số điện thoại, thông tin bạn cung cấp chỉ dùng để phản hồi liên hệ đó.</p>
-    <p>Các liên kết ngoài như GitHub hoặc CV online có thể áp dụng chính sách riêng của nền tảng đó.</p>
+    <main>
+      <nav aria-label="Liên kết trang">
+        <a class="nav-link" href="/profile/">Về portfolio</a>
+        <a class="nav-link" href="/profile/de/legal.html">Legal Notice</a>
+      </nav>
+
+      <header>
+        <p class="label">Privacy</p>
+        <h1>Quyền riêng tư rõ ràng cho portfolio tĩnh.</h1>
+        <p class="lede">
+          Trang này giải thích dữ liệu được xử lý khi bạn truy cập hoặc liên hệ qua portfolio cá nhân này.
+        </p>
+      </header>
+
+      <div class="content">
+        <section>
+          <h2>Không có tài khoản hoặc form</h2>
+          <p>
+            Portfolio này là website cá nhân tĩnh. Website không cung cấp tài khoản người dùng, form liên hệ, bình
+            luận hoặc thanh toán, và không chủ động thu thập dữ liệu cá nhân qua chính website.
+          </p>
+        </section>
+
+        <section>
+          <h2>Liên hệ qua email</h2>
+          <p>
+            Nếu bạn liên hệ với Trần Xuân Bắc qua email, thông tin bạn cung cấp chỉ được dùng để đọc, phản hồi và
+            theo dõi cuộc trao đổi đó.
+          </p>
+        </section>
+
+        <section>
+          <h2>Dịch vụ bên ngoài</h2>
+          <p>
+            Các liên kết tới GitHub, CV online, demo hoặc website bên ngoài có thể được xử lý theo chính sách riêng
+            của những nền tảng đó.
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>
+        <a href="/profile/de/legal.html">Legal Notice</a>
+      </footer>
+    </main>
   </body>
 </html>

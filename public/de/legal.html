@@ -3,21 +3,179 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Legal - Trần Xuân Bắc</title>
+    <title>Legal Notice - Trần Xuân Bắc</title>
+    <meta
+      name="description"
+      content="Thông tin pháp lý cho portfolio cá nhân của Trần Xuân Bắc."
+    />
     <style>
+      :root {
+        --bg: #f5efe6;
+        --ink: #2d2a24;
+        --muted: #665d50;
+        --line: rgba(45, 42, 36, 0.16);
+        --panel: rgba(255, 255, 255, 0.34);
+        --accent: #ff8400;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(circle at 88% 12%, rgba(255, 132, 0, 0.18), transparent 28rem),
+          linear-gradient(135deg, #f5efe6 0%, #e9ded0 100%);
+        color: var(--ink);
+        font-family: Arial, "Helvetica Neue", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 48px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 36px;
+      }
+
+      a {
+        color: inherit;
+        font-weight: 800;
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+      }
+
+      .nav-link {
+        padding: 8px 0;
+        color: var(--muted);
+      }
+
+      header {
+        display: grid;
+        gap: 14px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .label {
+        width: fit-content;
+        padding: 6px 9px;
+        border: 1px solid rgba(255, 132, 0, 0.34);
+        border-radius: 6px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 {
         max-width: 760px;
-        margin: 40px auto;
-        padding: 0 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
+        margin: 0;
+        font-size: clamp(32px, 6vw, 56px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        max-width: 680px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .content {
+        display: grid;
+        gap: 14px;
+        padding-top: 22px;
+      }
+
+      section {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--panel);
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        padding-top: 22px;
+        color: var(--muted);
+      }
+
+      @media (min-width: 760px) {
+        .content {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Legal</h1>
-    <p><strong>Chủ sở hữu:</strong> Trần Xuân Bắc</p>
-    <p><strong>Email:</strong> <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a></p>
-    <p>Portfolio này giới thiệu hồ sơ, kỹ năng, CV và dự án phần mềm phục vụ ứng tuyển thực tập.</p>
+    <main>
+      <nav aria-label="Liên kết trang">
+        <a class="nav-link" href="/profile/">Về portfolio</a>
+        <a class="nav-link" href="/profile/de/privacy.html">Privacy</a>
+      </nav>
+
+      <header>
+        <p class="label">Legal Notice</p>
+        <h1>Portfolio cá nhân và hồ sơ dự án.</h1>
+        <p class="lede">
+          Trang này xác định chủ sở hữu portfolio và mục đích của nội dung được công khai.
+        </p>
+      </header>
+
+      <div class="content">
+        <section>
+          <h2>Chủ sở hữu</h2>
+          <p>Trần Xuân Bắc. Email liên hệ: <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>.</p>
+        </section>
+
+        <section>
+          <h2>Mục đích</h2>
+          <p>
+            Portfolio này giới thiệu hồ sơ cá nhân, kỹ năng kỹ thuật, thông tin CV và các dự án phần mềm phục vụ
+            ứng tuyển thực tập và đánh giá tuyển dụng.
+          </p>
+        </section>
+
+        <section>
+          <h2>Nội dung</h2>
+          <p>
+            Mô tả dự án, hình ảnh, demo và repository được cung cấp như tài liệu portfolio. Các dịch vụ bên ngoài tự
+            chịu trách nhiệm về nội dung và khả năng truy cập của nền tảng đó.
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>
+        <a href="/profile/de/privacy.html">Privacy</a>
+      </footer>
+    </main>
   </body>
 </html>

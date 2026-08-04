@@ -9,6 +9,7 @@ import { locale } from "../i18n/store";
 import ButtonRound from "./ButtonRound.vue";
 import { lenis } from "../composables/useScroll";
 import ArrowRightLong from "./icons/ArrowRightLong.vue";
+import { computed } from "vue";
 
 interface Props {
   withSocial?: boolean;
@@ -20,6 +21,9 @@ const handleBackToTop = () => {
 };
 
 const { withSocial = true } = defineProps<Props>();
+
+const privacyHref = computed(() => `${import.meta.env.BASE_URL}${locale.value === "de" ? "de/privacy.html" : "privacy.html"}`);
+const legalHref = computed(() => `${import.meta.env.BASE_URL}${locale.value === "de" ? "de/legal.html" : "legal.html"}`);
 </script>
 
 <template>
@@ -44,7 +48,7 @@ const { withSocial = true } = defineProps<Props>();
           <div class="footer-top-links-legal">
             <Clickable renderAs="div">
               <Link
-                :href="locale === 'de' ? '/de/privacy' : '/privacy'"
+                :href="privacyHref"
                 class="footer-link"
                 :external="true"
                 data-cursor="circle-white"
@@ -55,7 +59,7 @@ const { withSocial = true } = defineProps<Props>();
             </Clickable>
             <Clickable renderAs="div">
               <Link
-                :href="locale === 'de' ? '/de/legal' : '/legal'"
+                :href="legalHref"
                 class="footer-link children-unclickable"
                 :external="true"
                 data-cursor="circle-white"
