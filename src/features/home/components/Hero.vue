@@ -15,7 +15,7 @@ import { t } from "../../../i18n/utils/translate";
           <Banner class="hero-banner" :copy="t('job-title')" v-if="!preloaderVisible" animated />
           <div class="hero-actions">
             <Link
-              href="https://xuanbackhoaibu.github.io/profile/files/CV-Tran-Xuan-Bac.html"
+              href="https://xuanbackhoaibu.github.io/PROFILEE/files/CV-Tran-Xuan-Bac.html"
               external
               class="hero-action"
               data-cursor="arrow-external"

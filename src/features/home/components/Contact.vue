@@ -23,7 +23,7 @@ onUnmounted(() => {
       <h2 class="contact-title" v-html="t('lets-work-together')"></h2>
       <div class="contact-details" aria-label="Contact links">
         <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>
-        <a href="https://xuanbackhoaibu.github.io/profile/files/CV-Tran-Xuan-Bac.html" target="_blank" rel="noreferrer">{{
+        <a href="https://xuanbackhoaibu.github.io/PROFILEE/files/CV-Tran-Xuan-Bac.html" target="_blank" rel="noreferrer">{{
           t("download-cv")
         }}</a>
       </div>
@@ -96,17 +96,20 @@ onUnmounted(() => {
     font-weight: 900;
 
     a {
-      width: min(100%, 320px);
+      width: fit-content;
+      max-width: 100%;
       padding: 8px 12px;
       border: var(--stroke-sm) solid rgba(225, 245, 255, 0.86);
       border-radius: var(--radius-sm);
       background-color: rgba(225, 245, 255, 0.28);
       color: var(--color-white-400);
+      white-space: nowrap;
       box-shadow:
         inset 0 -3px 0 var(--color-text-cyan-400),
         0 0 18px rgba(52, 191, 255, 0.24);
       text-shadow: 0 1px 0 rgba(0, 36, 116, 0.42);
-      overflow-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
       transition:
         background-color 0.15s ease,
         box-shadow 0.15s ease,

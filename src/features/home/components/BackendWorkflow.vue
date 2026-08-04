@@ -26,11 +26,12 @@ const workflow = [
 
 <style scoped lang="scss">
 .backend-workflow {
-  padding: 0 var(--space-outer) var(--space-xxxl);
+  padding: var(--space-xl) var(--space-outer) var(--space-xxxl);
   position: relative;
   z-index: var(--z-index-layout);
 
   @include mixins.mq("md") {
+    padding-top: calc(var(--space-xxxl) * 0.8);
     padding-bottom: calc(var(--space-xxxl) * 1.5);
   }
 
