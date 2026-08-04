@@ -107,19 +107,19 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 };
 
 const SERVICES_EN = [
-  { name: "C# & ASP.NET Core" },
-  { name: "Web API & EF Core" },
-  { name: "SQL Server & ERD" },
-  { name: "Odoo & PostgreSQL" },
-  { name: "Postman & API Testing" },
+  { name: "C#, Python, JavaScript, SQL" },
+  { name: "ASP.NET Core MVC/Web API" },
+  { name: "EF Core, Identity, SignalR" },
+  { name: "SQL Server, PostgreSQL, MySQL" },
+  { name: "Postman, Docker, Git, Odoo" },
 ] as const satisfies { name: string }[];
 
 const SERVICES_DE = [
-  { name: "C# & ASP.NET Core" },
-  { name: "Web API & EF Core" },
-  { name: "SQL Server & ERD" },
-  { name: "Odoo & PostgreSQL" },
-  { name: "Postman & API Testing" },
+  { name: "C#, Python, JavaScript, SQL" },
+  { name: "ASP.NET Core MVC/Web API" },
+  { name: "EF Core, Identity, SignalR" },
+  { name: "SQL Server, PostgreSQL, MySQL" },
+  { name: "Postman, Docker, Git, Odoo" },
 ] as const satisfies { name: string }[];
 
 const services = computed(() => {

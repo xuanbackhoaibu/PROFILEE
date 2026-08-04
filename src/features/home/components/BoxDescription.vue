@@ -169,7 +169,7 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
       font-size: var(--font-size-title-xs);
       font-weight: 700;
       line-height: var(--line-height-title);
-      overflow-wrap: anywhere;
+      white-space: nowrap;
     }
 
     &-location {

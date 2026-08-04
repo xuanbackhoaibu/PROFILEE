@@ -73,8 +73,15 @@ onUnmounted(() => {
     </div>
     <div class="preview-card-content">
       <div class="preview-card-copys">
+        <div class="preview-card-meta">
+          <span>{{ props.preview.role }}</span>
+        </div>
         <h3 class="preview-card-title">{{ props.preview.title }}</h3>
         <p class="preview-card-description">{{ props.preview.description }}</p>
+        <ul class="preview-card-stack" :aria-label="props.preview.title">
+          <li v-for="item in props.preview.stack" :key="item">{{ item }}</li>
+        </ul>
+        <p class="preview-card-outcome">{{ props.preview.outcome }}</p>
       </div>
     </div>
   </Link>
@@ -224,6 +231,25 @@ onUnmounted(() => {
   &-copys {
     display: flex;
     flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  &-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+
+    span {
+      width: fit-content;
+      padding: 4px 7px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-text-400);
+      color: var(--color-background-400);
+      font-family: "ProFontWindows";
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      line-height: 1;
+    }
   }
 
   &-title {
@@ -231,7 +257,7 @@ onUnmounted(() => {
     font-weight: 700;
     color: var(--color-text-400);
     line-height: var(--line-height-title);
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
 
   &-description {
@@ -239,7 +265,35 @@ onUnmounted(() => {
     color: var(--color-text-300);
     font-weight: 500;
     line-height: var(--line-height-copy);
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+  }
+
+  &-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-top: var(--space-xxs);
+
+    li {
+      list-style: none;
+      padding: 4px 7px;
+      border: var(--stroke-sm) solid var(--color-grayscale-500);
+      border-radius: var(--radius-sm);
+      color: var(--color-text-300);
+      font-size: var(--font-size-xs);
+      font-weight: 800;
+      line-height: 1;
+      overflow-wrap: break-word;
+    }
+  }
+
+  &-outcome {
+    padding-top: var(--space-xxs);
+    color: var(--color-text-400);
+    font-size: var(--font-size-sm);
+    font-weight: 800;
+    line-height: var(--line-height-copy);
+    overflow-wrap: break-word;
   }
 }
 </style>

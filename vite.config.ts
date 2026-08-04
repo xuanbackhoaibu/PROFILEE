@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import glsl from "vite-plugin-glsl";
 
 export default defineConfig({
+  base: "/profile/",
   plugins: [
     vue(),
     glsl({
@@ -31,10 +32,16 @@ export default defineConfig({
     outDir: "./dist",
     sourcemap: false,
     emptyOutDir: true,
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 700,
     rollupOptions: {
       output: {
         inlineDynamicImports: false,
+        manualChunks: {
+          vue: ["vue"],
+          three: ["three"],
+          gsap: ["gsap"],
+          audio: ["howler"],
+        },
         assetFileNames: "assets/[hash].[ext]",
         entryFileNames: "chunks/[name]-[hash].js",
         chunkFileNames: "chunks/[hash].js",

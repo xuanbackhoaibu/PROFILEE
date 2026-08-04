@@ -28,8 +28,13 @@ const classes = computed(() => {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  font-size: var(--font-size-md);
   max-width: 100%;
   grid-column: 1 / 13;
+
+  @include mixins.mq("md") {
+    font-size: var(--font-size-lg);
+  }
 
   &-size {
     &-sm {
@@ -60,8 +65,12 @@ const classes = computed(() => {
   }
 
   &-title {
-    font-size: var(--font-size-title-sm);
-    line-height: var(--line-height-md);
+    font-size: var(--font-size-title-xs);
+    line-height: var(--line-height-title);
+
+    @include mixins.mq("md") {
+      font-size: var(--font-size-title-sm);
+    }
   }
 
   &-items {
@@ -72,7 +81,7 @@ const classes = computed(() => {
   &-item {
     padding: 6px 0;
     line-height: var(--line-height-copy);
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
 }
 </style>

@@ -11,9 +11,8 @@ import { t } from "../../../i18n/utils/translate";
     <div class="hero-content grid">
       <div class="hero-content-inner" id="hero-content-inner">
         <div class="hero-content-copys">
-          <h1 class="hero-title">Trần Xuân<br />Bắc</h1>
+          <h1 class="hero-title">Trần Xuân Bắc</h1>
           <Banner class="hero-banner" :copy="t('job-title')" v-if="!preloaderVisible" animated />
-          <p class="hero-summary">{{ t("hero-summary") }}</p>
           <div class="hero-actions">
             <Link
               href="https://xuanbackhoaibu.github.io/profile/files/CV-Tran-Xuan-Bac.html"
@@ -52,7 +51,7 @@ import { t } from "../../../i18n/utils/translate";
   &-content {
     align-items: center;
     justify-content: center;
-    height: 46%;
+    height: 54%;
 
     @include mixins.landscape {
       height: 100%;
@@ -74,7 +73,7 @@ import { t } from "../../../i18n/utils/translate";
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: fit-content;
+      width: min(100%, calc(var(--svw) * 100 - var(--space-outer) * 2));
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -92,6 +91,7 @@ import { t } from "../../../i18n/utils/translate";
       flex-direction: column;
       gap: var(--space-sm);
       position: relative;
+      max-width: 100%;
 
       @include mixins.mq("md") {
         gap: var(--space-md);
@@ -106,34 +106,22 @@ import { t } from "../../../i18n/utils/translate";
   &-title {
     font-weight: 900;
     letter-spacing: 0.02em;
-    font-size: var(--font-size-title-lg);
-    line-height: var(--line-height-title);
-
-    @include mixins.landscape {
-      font-size: var(--font-size-title-lg);
-    }
-
-    @include mixins.landscape-large {
-      @include mixins.mq("sm") {
-        font-size: var(--font-size-title-xl);
-      }
-
-      @include mixins.mq("xl") {
-        font-size: var(--font-size-title-xxl);
-      }
-    }
+    font-size: clamp(34px, 10vw, 76px);
+    line-height: 1;
+    white-space: nowrap;
+    max-width: 100%;
   }
 
   &-banner {
     position: absolute;
     bottom: 0;
-    right: -16px;
+    right: 0;
     z-index: 10;
-    transform: rotate(-5deg) translate(0, 65%);
+    transform: rotate(-5deg) translate(0, 78%) scale(0.88);
 
     @include mixins.mq("sm") {
       right: -24px;
-      transform: rotate(-5deg) translate(0, 70%);
+      transform: rotate(-5deg) translate(0, 70%) scale(1);
     }
 
     @include mixins.mq("lg") {
@@ -160,6 +148,7 @@ import { t } from "../../../i18n/utils/translate";
     gap: var(--space-sm);
     position: relative;
     z-index: 11;
+    padding-top: var(--space-xs);
   }
 
   &-action {

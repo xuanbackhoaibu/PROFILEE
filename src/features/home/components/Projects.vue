@@ -140,9 +140,10 @@ onMounted(loadPreviews);
     grid-column: 1 / span 12;
     display: grid;
     gap: var(--space-lg);
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: minmax(0, 1fr);
 
     @include mixins.mq("md") {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       grid-column: 1 / span 12;
     }
 

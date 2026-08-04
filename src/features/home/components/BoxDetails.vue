@@ -139,13 +139,13 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
     position: absolute;
     padding-bottom: 3px;
     padding-right: var(--line-length);
-    width: 240px;
+    width: 300px;
     max-width: calc(var(--svw) * 30);
     transform: translate(-100%, -50%);
   }
 
   @include mixins.landscape-large {
-    width: 240px;
+    width: 300px;
   }
 
   &::after,
@@ -220,13 +220,13 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
   }
 
   &-title {
-    font-size: var(--font-size-title-xxs);
+    font-size: var(--font-size-md);
     font-weight: 700;
     line-height: var(--line-height-title);
-    overflow-wrap: anywhere;
+    white-space: nowrap;
 
     @include mixins.mq("md") {
-      font-size: var(--font-size-title-sm);
+      font-size: var(--font-size-title-xs);
     }
   }
 

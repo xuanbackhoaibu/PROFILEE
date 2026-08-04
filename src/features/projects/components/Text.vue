@@ -26,9 +26,14 @@ const classes = computed(() => {
 
 <style scoped lang="scss">
 .text {
+  font-size: var(--font-size-md);
   line-height: var(--line-height-copy);
   grid-column: 1 / 13;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+
+  @include mixins.mq("md") {
+    font-size: var(--font-size-lg);
+  }
 
   @include mixins.mq("md") {
     grid-column: 3 / 11;
@@ -45,9 +50,13 @@ const classes = computed(() => {
   }
 
   &-title {
-    font-size: var(--font-size-title-sm);
+    font-size: var(--font-size-title-xs);
     line-height: var(--line-height-title);
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+
+    @include mixins.mq("md") {
+      font-size: var(--font-size-title-sm);
+    }
   }
 }
 </style>

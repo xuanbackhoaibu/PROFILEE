@@ -26,4 +26,7 @@ export interface ProjectPreview {
   slug: string;
   thumbnail: string;
   description: string;
+  role: string;
+  stack: string[];
+  outcome: string;
 }

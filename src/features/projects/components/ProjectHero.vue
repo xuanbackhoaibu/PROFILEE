@@ -57,8 +57,8 @@ watch(projectId, () => {
 <style scoped lang="scss">
 .project-hero {
   padding: 0 var(--space-outer);
-  padding-bottom: 48px;
-  padding-top: calc(var(--height-header) + 24px);
+  padding-bottom: 40px;
+  padding-top: calc(var(--height-header) + 18px);
 
   @include mixins.mq("md") {
     padding-bottom: 64px;
@@ -77,7 +77,7 @@ watch(projectId, () => {
     grid-column: 1 / 13;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: var(--space-sm);
     margin-top: var(--space-md);
     width: 100%;
@@ -116,15 +116,13 @@ watch(projectId, () => {
   }
 
   &-title {
-    font-size: var(--font-size-title-lg);
+    font-size: clamp(32px, 10vw, 64px);
     color: var(--color-text-400);
-    line-height: var(--line-height-title);
+    line-height: 1.04;
     transform: translateY(0%);
     animation: project-hero-title-visible 0.5s var(--ease-smooth);
-
-    @include mixins.mq("md") {
-      font-size: var(--font-size-title-xl);
-    }
+    overflow-wrap: break-word;
+    word-break: normal;
 
     @keyframes project-hero-title-visible {
       from {
@@ -136,20 +134,22 @@ watch(projectId, () => {
     }
 
     &-wrapper {
-      overflow: hidden;
+      overflow: visible;
       margin: -0.08em 0;
       padding: 0.08em 0;
     }
   }
 
   &-description {
+    font-size: var(--font-size-md);
     color: var(--color-text-400);
     line-height: var(--line-height-copy);
     grid-column: 1 / 13;
     align-self: center;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 
     @include mixins.mq("md") {
+      font-size: var(--font-size-lg);
       grid-row: 1;
       grid-column: 6 / 12;
     }
@@ -172,6 +172,7 @@ watch(projectId, () => {
     grid-row: 1;
     align-self: top;
     grid-column: 1 / 13;
+    min-width: 0;
 
     @include mixins.mq("md") {
       grid-column: 1 / 6;

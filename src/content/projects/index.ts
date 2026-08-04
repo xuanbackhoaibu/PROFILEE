@@ -5,8 +5,6 @@ export const projectIds = [
   "scant-reports",
   "odoo-project-management",
   "student-performance",
-  "clickup-report-ui",
-  "student-management",
 ];
 
 function simplifyModules(glob: Record<string, any>) {
