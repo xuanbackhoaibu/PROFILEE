@@ -30,12 +30,6 @@
   "services": "Skills",
   "start-a-new-project": "Open to internships",
   "source-code": "Source Code",
-  "workflow-api": "Design REST endpoints, validation, auth flow, and Swagger docs.",
-  "workflow-database": "Model SQL Server tables, relationships, reports, and seed data.",
-  "workflow-docs": "Write use cases, API notes, test cases, and deployment steps.",
-  "workflow-heading": "How I turn a requirement into a working backend",
-  "workflow-label": "Backend lab",
-  "workflow-testing": "Check APIs with Postman, sample payloads, and failure cases.",
   "switch-to-project": "Switch to project {project}",
   "version": "Version",
   "view-project": "View project"

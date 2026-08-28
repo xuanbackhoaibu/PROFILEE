@@ -30,12 +30,6 @@
   "services": "Kỹ năng",
   "start-a-new-project": "Sẵn sàng thực tập",
   "source-code": "Quellcode",
-  "workflow-api": "Thiết kế REST endpoint, validation, luồng auth và tài liệu Swagger.",
-  "workflow-database": "Mô hình hóa bảng SQL Server, quan hệ, báo cáo và dữ liệu mẫu.",
-  "workflow-docs": "Viết use case, ghi chú API, test case và bước triển khai.",
-  "workflow-heading": "Cách tôi biến yêu cầu thành backend chạy được",
-  "workflow-label": "Backend lab",
-  "workflow-testing": "Kiểm tra API bằng Postman, payload mẫu và các trường hợp lỗi.",
   "switch-to-project": "Zum Projekt {project} wechseln",
   "version": "Version",
   "view-project": "Projekt ansehen"
