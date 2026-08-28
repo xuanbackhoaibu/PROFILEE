@@ -139,13 +139,13 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
     position: absolute;
     padding-bottom: 3px;
     padding-right: var(--line-length);
-    width: 300px;
+    width: 240px;
     max-width: calc(var(--svw) * 30);
     transform: translate(-100%, -50%);
   }
 
   @include mixins.landscape-large {
-    width: 300px;
+    width: 240px;
   }
 
   &::after,

@@ -23,15 +23,6 @@ export default [
     outcome: "Upload, xử lý, phân quyền và xuất báo cáo",
   },
   {
-    title: "Odoo Project Management",
-    slug: "odoo-project-management",
-    thumbnail: backendWorkspace,
-    description: "ERP quản lý dự án và báo cáo",
-    role: "Odoo Intern",
-    stack: ["Odoo", "Python", "PostgreSQL"],
-    outcome: "Workflow dự án, báo cáo và custom view",
-  },
-  {
     title: "Student Performance",
     slug: "student-performance",
     thumbnail: backendWorkspace,

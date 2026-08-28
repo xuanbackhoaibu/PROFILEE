@@ -23,15 +23,6 @@ export default [
     outcome: "Upload, process, authorize, export reports",
   },
   {
-    title: "Odoo Project Management",
-    slug: "odoo-project-management",
-    thumbnail: backendWorkspace,
-    description: "ERP project workflow and reports",
-    role: "Odoo Intern",
-    stack: ["Odoo", "Python", "PostgreSQL"],
-    outcome: "Project workflow, reports, and custom views",
-  },
-  {
     title: "Student Performance",
     slug: "student-performance",
     thumbnail: backendWorkspace,

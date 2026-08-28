@@ -1,7 +1,7 @@
 {
   "about": "Hồ sơ",
   "about-intro": "Sinh viên Công nghệ thông tin định hướng Backend .NET, System Analysis và API Testing.<br/>Có kinh nghiệm xây dựng ASP.NET Core, cơ sở dữ liệu SQL Server, công cụ báo cáo và tài liệu dự án.",
-  "about-tagline": "Ứng viên thực tập Backend .NET làm việc với C#, ASP.NET Core, EF Core, SQL database, REST API, Postman, Docker, Odoo và công cụ dữ liệu.",
+  "about-tagline": "<strong>Giới thiệu</strong><br/>Lập trình viên Backend tập trung xây dựng ứng dụng web và REST API với C# và ASP.NET Core.<br/>Có kinh nghiệm với xác thực, cơ sở dữ liệu, tích hợp API và các dự án học thuật full-stack. Hiện đang tìm kiếm vị trí thực tập .NET Backend để tích lũy kinh nghiệm sản phẩm thực tế.",
   "back-to-home": "Zurück zur Startseite",
   "contact": "Kontakt",
   "description": "Beschreibung",
@@ -11,7 +11,7 @@
   "get-in-touch": "Schreib mir",
   "go-to": "Gehe zu",
   "download-cv": "Tải CV",
-  "hero-summary": "Ứng viên thực tập Backend .NET với dự án ASP.NET Core, SQL Server, Odoo, kiểm thử API và tài liệu hệ thống.",
+  "hero-summary": "Ứng viên thực tập Backend .NET với dự án ASP.NET Core, SQL Server, công cụ báo cáo, kiểm thử API và tài liệu hệ thống.",
   "job-title": "Backend .NET / System Analyst Intern",
   "learning-api-security": "Bảo mật API cơ bản: auth, validation, rate limit và xử lý lỗi.",
   "learning-clean-architecture": ".NET Clean Architecture và service layer dễ bảo trì.",

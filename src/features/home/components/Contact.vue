@@ -21,13 +21,15 @@ onUnmounted(() => {
   <div class="contact grid" ref="contactElement">
     <div class="contact-content">
       <h2 class="contact-title" v-html="t('lets-work-together')"></h2>
-      <div class="contact-details" aria-label="Contact links">
-        <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>
-        <a href="https://xuanbackhoaibu.github.io/PROFILEE/files/CV-Tran-Xuan-Bac.html" target="_blank" rel="noreferrer">{{
-          t("download-cv")
-        }}</a>
+      <div class="contact-links-panel">
+        <div class="contact-details" aria-label="Contact links">
+          <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>
+          <a href="https://xuanbackhoaibu.github.io/PROFILEE/files/CV-Tran-Xuan-Bac.html" target="_blank" rel="noreferrer">{{
+            t("download-cv")
+          }}</a>
+        </div>
+        <Social variant="background" />
       </div>
-      <Social variant="background" />
     </div>
   </div>
 </template>
@@ -72,10 +74,12 @@ onUnmounted(() => {
     font-weight: 900;
     letter-spacing: 0.02em;
     font-size: clamp(32px, 11vw, 56px);
-    color: var(--color-white-400);
+    color: var(--color-text-400);
     line-height: var(--line-height-title);
     max-width: 760px;
-    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.48);
+    text-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.88),
+      0 10px 28px rgba(45, 42, 36, 0.16);
 
     @include mixins.mq("sm") {
       font-size: var(--font-size-title-lg);
@@ -86,28 +90,53 @@ onUnmounted(() => {
     }
   }
 
+  &-links-panel {
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+
+    :deep(.social) {
+      gap: var(--space-sm);
+    }
+
+    :deep(.button-wrapper-background) {
+      background-color: rgba(255, 255, 255, 0.78);
+      color: var(--color-text-400);
+      --icon-color: var(--color-text-400);
+      border: var(--stroke-sm) solid rgba(45, 42, 36, 0.14);
+      box-shadow: 0 8px 18px rgba(45, 42, 36, 0.1);
+    }
+
+    :deep(.button-wrapper-background:hover) {
+      background-color: var(--color-orange-400);
+      color: var(--color-white-400);
+      --icon-color: var(--color-white-400);
+      border-color: var(--color-orange-400);
+    }
+  }
+
   &-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-sm);
     font-family: "ProFontWindows";
-    color: var(--color-white-400);
     font-weight: 900;
 
     a {
       width: fit-content;
       max-width: 100%;
-      padding: 8px 12px;
-      border: var(--stroke-sm) solid rgba(225, 245, 255, 0.86);
+      padding: 10px 14px;
+      border: var(--stroke-sm) solid rgba(45, 42, 36, 0.16);
       border-radius: var(--radius-sm);
-      background-color: rgba(225, 245, 255, 0.28);
-      color: var(--color-white-400);
+      background-color: rgba(255, 255, 255, 0.78);
+      color: var(--color-text-400);
       white-space: nowrap;
-      box-shadow:
-        inset 0 -3px 0 var(--color-text-cyan-400),
-        0 0 18px rgba(52, 191, 255, 0.24);
-      text-shadow: 0 1px 0 rgba(0, 36, 116, 0.42);
+      box-shadow: 0 8px 18px rgba(45, 42, 36, 0.1);
+      text-shadow: none;
       overflow: hidden;
       text-overflow: ellipsis;
       transition:
@@ -118,10 +147,10 @@ onUnmounted(() => {
 
       @include mixins.hover {
         &:hover {
-          background-color: var(--color-text-cyan-400);
-          box-shadow: inset 0 -2px 0 var(--color-white-400);
-          color: var(--color-dark-blue-500);
-          border-color: var(--color-text-cyan-400);
+          background-color: var(--color-orange-400);
+          box-shadow: 0 10px 24px rgba(255, 132, 0, 0.24);
+          color: var(--color-white-400);
+          border-color: var(--color-orange-400);
         }
       }
     }

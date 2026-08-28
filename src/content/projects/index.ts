@@ -3,7 +3,6 @@ import type { Locale } from "../../i18n/types";
 export const projectIds = [
   "webbanhangonline",
   "scant-reports",
-  "odoo-project-management",
   "student-performance",
 ];
 

@@ -111,7 +111,7 @@ const SERVICES_EN = [
   { name: "ASP.NET Core MVC/Web API" },
   { name: "EF Core, Identity, SignalR" },
   { name: "SQL Server, PostgreSQL, MySQL" },
-  { name: "Postman, Docker, Git, Odoo" },
+  { name: "Postman, Docker, Git, Swagger" },
 ] as const satisfies { name: string }[];
 
 const SERVICES_DE = [
@@ -119,7 +119,7 @@ const SERVICES_DE = [
   { name: "ASP.NET Core MVC/Web API" },
   { name: "EF Core, Identity, SignalR" },
   { name: "SQL Server, PostgreSQL, MySQL" },
-  { name: "Postman, Docker, Git, Odoo" },
+  { name: "Postman, Docker, Git, Swagger" },
 ] as const satisfies { name: string }[];
 
 const services = computed(() => {

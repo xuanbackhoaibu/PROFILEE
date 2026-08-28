@@ -17,7 +17,6 @@ export type TagVariant =
   | "sqlserver"
   | "python"
   | "docker"
-  | "odoo"
   | "analysis";
 
 export const tagLabels = {
@@ -39,6 +38,5 @@ export const tagLabels = {
   sqlserver: "SQL Server",
   python: "Python",
   docker: "Docker",
-  odoo: "Odoo",
   analysis: "Analysis",
 } as const satisfies Record<TagVariant, string>;

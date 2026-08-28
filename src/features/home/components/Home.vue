@@ -2,7 +2,6 @@
 import Layout from "../../../components/Layout.vue";
 import Hero from "./Hero.vue";
 import About from "./About.vue";
-import BackendWorkflow from "./BackendWorkflow.vue";
 import LearningFocus from "./LearningFocus.vue";
 //import AboutSections from "../features/about/Sections.vue";
 import Projects from "./Projects.vue";
@@ -159,7 +158,6 @@ watch(
         <div class="intro-wrapper-spacer"></div>
         <div class="about-spacer" ref="aboutSpacerRef" id="about"></div>
       </div>
-      <BackendWorkflow />
       <LearningFocus />
       <Projects id="projects" @loaded="handleProjectsLoaded" />
       <div ref="contactRef" class="home-contact">

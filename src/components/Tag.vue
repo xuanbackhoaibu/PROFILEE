@@ -112,11 +112,6 @@ const classes = computed(() => ["tag", `tag-variant-${props.variant}`]);
       color: white;
     }
 
-    &-odoo {
-      background-color: #714b67;
-      color: white;
-    }
-
     &-analysis {
       color: var(--color-text-400);
       border-color: var(--color-grayscale-400);
