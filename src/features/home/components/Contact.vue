@@ -5,6 +5,7 @@ import { t } from "../../../i18n/utils/translate";
 import Social from "../../../components/Social.vue";
 
 const contactElement = ref<HTMLElement | null>(null);
+const cvPdfPath = `${import.meta.env.BASE_URL}files/CV-Tran-Xuan-Bac.pdf`;
 
 onMounted(() => {
   if (contactElement.value) {
@@ -24,7 +25,7 @@ onUnmounted(() => {
       <div class="contact-links-panel">
         <div class="contact-details" aria-label="Contact links">
           <a href="mailto:Bxuan964@gmail.com">Bxuan964@gmail.com</a>
-          <a href="https://xuanbackhoaibu.github.io/PROFILEE/files/CV-Tran-Xuan-Bac.html" target="_blank" rel="noreferrer">{{
+          <a :href="cvPdfPath" download="CV-Tran-Xuan-Bac.pdf">{{
             t("download-cv")
           }}</a>
         </div>

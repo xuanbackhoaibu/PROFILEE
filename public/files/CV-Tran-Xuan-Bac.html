@@ -287,7 +287,7 @@
   <body>
     <div class="toolbar">
       <a href="../index.html">Quay lại portfolio</a>
-      <a href="./CV-Tran-Xuan-Bac.pdf" download="CV-Tran-Xuan-Bac.pdf">Tải CV PDF</a>
+      <a href="./CV-Tran-Xuan-Bac.pdf" download="CV-Tran-Xuan-Bac.pdf" onclick="downloadPdf(event)">Tải CV PDF</a>
       <button type="button" onclick="window.print()">In CV</button>
     </div>
 
@@ -447,6 +447,36 @@
     </main>
 
     <script>
+      function downloadPdf(event) {
+        const link = event.currentTarget;
+        const fileName = link.getAttribute("download") || "CV-Tran-Xuan-Bac.pdf";
+
+        event.preventDefault();
+
+        fetch(link.href)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("PDF download failed");
+            }
+
+            return response.blob();
+          })
+          .then((blob) => {
+            const objectUrl = URL.createObjectURL(blob);
+            const downloadLink = document.createElement("a");
+
+            downloadLink.href = objectUrl;
+            downloadLink.download = fileName;
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            downloadLink.remove();
+            URL.revokeObjectURL(objectUrl);
+          })
+          .catch(() => {
+            window.location.href = link.href;
+          });
+      }
+
       if (new URLSearchParams(window.location.search).get("print") === "1") {
         window.addEventListener("load", () => {
           window.setTimeout(() => window.print(), 450);

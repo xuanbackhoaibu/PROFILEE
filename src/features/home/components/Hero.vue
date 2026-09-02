@@ -4,6 +4,8 @@ import Banner from "../../../components/Banner.vue";
 import Link from "../../../components/Link.vue";
 import { preloaderVisible } from "../../../composables/usePreloader";
 import { t } from "../../../i18n/utils/translate";
+
+const cvPdfPath = `${import.meta.env.BASE_URL}files/CV-Tran-Xuan-Bac.pdf`;
 </script>
 
 <template>
@@ -14,15 +16,15 @@ import { t } from "../../../i18n/utils/translate";
           <h1 class="hero-title">Trần Xuân Bắc</h1>
           <Banner class="hero-banner" :copy="t('job-title')" v-if="!preloaderVisible" animated />
           <div class="hero-actions">
-            <Link
-              href="https://xuanbackhoaibu.github.io/PROFILEE/files/CV-Tran-Xuan-Bac.html"
-              external
+            <a
+              :href="cvPdfPath"
+              download="CV-Tran-Xuan-Bac.pdf"
               class="hero-action"
               data-cursor="arrow-external"
               data-hoversound="hover"
             >
               <Button renderAs="div" variant="accent" size="sm">{{ t("download-cv") }}</Button>
-            </Link>
+            </a>
             <Link
               href="https://github.com/xuanbackhoaibu"
               external
