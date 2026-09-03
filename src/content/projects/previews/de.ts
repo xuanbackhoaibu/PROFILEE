@@ -1,5 +1,5 @@
 import backendWorkspace from "../../../assets/images/profile/backend-workspace.png";
-import webthoitrangDemo from "../../../assets/images/projects/source-profile/webthoitrang-demo.png";
+import webbanhangHome from "../../../assets/images/projects/source-profile/webbanhang-home.jpg";
 
 import type { ProjectPreview } from "../../types";
 
@@ -7,7 +7,7 @@ export default [
   {
     title: "WebBanHangOnline",
     slug: "webbanhangonline",
-    thumbnail: webthoitrangDemo,
+    thumbnail: webbanhangHome,
     description: "Website bán hàng ASP.NET Core",
     role: "Backend .NET",
     stack: ["ASP.NET Core", "SQL Server", "Docker"],

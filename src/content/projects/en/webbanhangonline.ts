@@ -1,4 +1,10 @@
-import webthoitrangDemo from "../../../assets/images/projects/source-profile/webthoitrang-demo.png";
+import webbanhangAdminDashboard from "../../../assets/images/projects/source-profile/webbanhang-admin-dashboard.jpg";
+import webbanhangCart from "../../../assets/images/projects/source-profile/webbanhang-cart.jpg";
+import webbanhangCatalog from "../../../assets/images/projects/source-profile/webbanhang-catalog.jpg";
+import webbanhangHome from "../../../assets/images/projects/source-profile/webbanhang-home.jpg";
+import webbanhangPayment from "../../../assets/images/projects/source-profile/webbanhang-payment.jpg";
+import webbanhangProductDetail from "../../../assets/images/projects/source-profile/webbanhang-product-detail.jpg";
+import webbanhangSwagger from "../../../assets/images/projects/source-profile/webbanhang-swagger.jpg";
 
 import type { ProjectContent } from "../../types";
 
@@ -14,9 +20,61 @@ export default {
       type: "media",
       props: {
         type: "image",
-        src: webthoitrangDemo,
-        alt: "WebBanHangOnline fashion e-commerce interface",
-        caption: "Fashion e-commerce demo interface",
+        src: webbanhangHome,
+        alt: "WebBanHangOnline fashion e-commerce homepage",
+        caption: "Fashion storefront with search, cart, wishlist, and product discovery",
+      },
+    },
+    {
+      type: "gallery",
+      props: {
+        eyebrow: "Product proof",
+        title: "Full shopping flow, shown end to end",
+        description:
+          "Recruiters can quickly see the customer journey instead of reading it only as a feature list.",
+        items: [
+          {
+            src: webbanhangCatalog,
+            alt: "Product catalog with fashion product cards",
+            caption: "Catalog browsing with product cards, prices, hover actions, and category pages.",
+          },
+          {
+            src: webbanhangProductDetail,
+            alt: "Product detail page with variants and stock state",
+            caption: "Product detail with images, ratings, size selection, stock state, cart, and buy-now actions.",
+          },
+          {
+            src: webbanhangCart,
+            alt: "Shopping cart with selected items and checkout summary",
+            caption: "Cart management with quantity controls, selected products, subtotal, and checkout CTA.",
+          },
+          {
+            src: webbanhangPayment,
+            alt: "Checkout payment method selection",
+            caption: "Checkout payment selection with COD, VNPay, MoMo, VietQR, card, and voucher support.",
+          },
+        ],
+      },
+    },
+    {
+      type: "gallery",
+      props: {
+        eyebrow: "Backend proof",
+        title: "Admin analytics and documented APIs",
+        description:
+          "The project is positioned as a Backend .NET portfolio case, so the strongest screenshots show operations data and API documentation.",
+        items: [
+          {
+            src: webbanhangAdminDashboard,
+            alt: "Admin dashboard with revenue, orders, users, and products",
+            caption: "Admin dashboard with order totals, revenue, users, products, RFM, abandoned cart, and cohort data.",
+          },
+          {
+            src: webbanhangSwagger,
+            alt: "Swagger UI showing WebBanHangOnline API endpoints",
+            caption: "Swagger/OpenAPI documentation for catalog, admin analytics, and payment webhook APIs.",
+          },
+        ],
       },
     },
     {

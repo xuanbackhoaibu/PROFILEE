@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ImageText from "./ImageText.vue";
+import Gallery from "./Gallery.vue";
 import Text from "./Text.vue";
 import List from "./List.vue";
 import Media from "./Media.vue";
@@ -13,6 +14,7 @@ type Props = ProjectComponentProps & {
 const { type, props, index } = defineProps<Props>();
 
 const components = {
+  gallery: Gallery,
   imageText: ImageText,
   text: Text,
   list: List,

@@ -1,4 +1,10 @@
-import webthoitrangDemo from "../../../assets/images/projects/source-profile/webthoitrang-demo.png";
+import webbanhangAdminDashboard from "../../../assets/images/projects/source-profile/webbanhang-admin-dashboard.jpg";
+import webbanhangCart from "../../../assets/images/projects/source-profile/webbanhang-cart.jpg";
+import webbanhangCatalog from "../../../assets/images/projects/source-profile/webbanhang-catalog.jpg";
+import webbanhangHome from "../../../assets/images/projects/source-profile/webbanhang-home.jpg";
+import webbanhangPayment from "../../../assets/images/projects/source-profile/webbanhang-payment.jpg";
+import webbanhangProductDetail from "../../../assets/images/projects/source-profile/webbanhang-product-detail.jpg";
+import webbanhangSwagger from "../../../assets/images/projects/source-profile/webbanhang-swagger.jpg";
 
 import type { ProjectContent } from "../../types";
 
@@ -14,9 +20,61 @@ export default {
       type: "media",
       props: {
         type: "image",
-        src: webthoitrangDemo,
+        src: webbanhangHome,
         alt: "Giao diện website bán hàng thời trang WebBanHangOnline",
-        caption: "Giao diện demo e-commerce thời trang",
+        caption: "Trang chủ cửa hàng với tìm kiếm, giỏ hàng, wishlist và khám phá sản phẩm",
+      },
+    },
+    {
+      type: "gallery",
+      props: {
+        eyebrow: "Minh chứng sản phẩm",
+        title: "Luồng mua sắm đầy đủ từ xem hàng đến thanh toán",
+        description:
+          "Recruiter có thể nhìn nhanh hành trình khách hàng thay vì chỉ đọc danh sách chức năng.",
+        items: [
+          {
+            src: webbanhangCatalog,
+            alt: "Danh sách sản phẩm thời trang trong WebBanHangOnline",
+            caption: "Xem catalog với card sản phẩm, giá, thao tác nhanh và trang danh mục.",
+          },
+          {
+            src: webbanhangProductDetail,
+            alt: "Trang chi tiết sản phẩm với biến thể và tồn kho",
+            caption: "Chi tiết sản phẩm có ảnh, đánh giá, chọn size, trạng thái tồn kho, thêm giỏ và mua ngay.",
+          },
+          {
+            src: webbanhangCart,
+            alt: "Giỏ hàng với sản phẩm đã chọn và tóm tắt checkout",
+            caption: "Quản lý giỏ hàng với số lượng, sản phẩm đã chọn, tạm tính và CTA checkout.",
+          },
+          {
+            src: webbanhangPayment,
+            alt: "Trang chọn phương thức thanh toán",
+            caption: "Checkout hỗ trợ COD, VNPay, MoMo, VietQR, thẻ demo và voucher.",
+          },
+        ],
+      },
+    },
+    {
+      type: "gallery",
+      props: {
+        eyebrow: "Minh chứng backend",
+        title: "Dashboard quản trị và API được tài liệu hóa",
+        description:
+          "Dự án được định vị là portfolio Backend .NET, nên hai ảnh này giúp chứng minh phần quản trị, báo cáo và API rõ nhất.",
+        items: [
+          {
+            src: webbanhangAdminDashboard,
+            alt: "Dashboard admin có doanh thu, đơn hàng, người dùng và sản phẩm",
+            caption: "Admin dashboard có tổng đơn, doanh thu, người dùng, sản phẩm, RFM, bỏ giỏ hàng và cohort.",
+          },
+          {
+            src: webbanhangSwagger,
+            alt: "Swagger UI hiển thị API endpoints của WebBanHangOnline",
+            caption: "Swagger/OpenAPI cho catalog API, admin analytics API và payment webhook demo.",
+          },
+        ],
       },
     },
     {
