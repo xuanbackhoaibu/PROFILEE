@@ -362,10 +362,60 @@ def main():
         ],
     }
 
+    default_cv = {
+        "title": "BACKEND .NET INTERN/FRESHER | SYSTEM ANALYSIS",
+        "objective": "Information Technology student seeking Backend .NET Intern/Fresher and System Analysis opportunities. Hands-on experience building ASP.NET Core MVC/Web API applications, SQL Server databases, authentication/authorization, REST APIs, reporting tools, Docker-based local demos, and system analysis documentation. Eager to contribute to real software projects while improving backend service design, requirement analysis, API quality, and documentation skills.",
+        "skills": [
+            ("Languages", "C#, Python, JavaScript, SQL"),
+            ("Backend", "C#, ASP.NET Core MVC/Web API, Entity Framework Core, RESTful API, ASP.NET Core Identity, SignalR, authentication/authorization"),
+            ("Database", "SQL Server, PostgreSQL, MySQL, SQLite, database design, ERD, EF migrations, relational schema design"),
+            ("Analysis & Testing", "Use Case, requirement analysis, API specification, Postman, API testing, workflow documentation"),
+            ("Tools & Others", "Git, GitHub, Docker, Docker Compose, Swagger/OpenAPI, Postman, Bootstrap, jQuery, pandas, scikit-learn, Gemini API"),
+        ],
+        "projects": [
+            {
+                "name": "WebBanHangOnline - Online Fashion E-commerce Website (ASP.NET Core, Solo Project)",
+                "year": "2026",
+                "github": "https://github.com/xuanbackhoaibu/WebBanHangOnline.git",
+                "bullets": [
+                    "Built an online fashion store using ASP.NET Core MVC, Razor Pages, Entity Framework Core, SQL Server, Bootstrap, and jQuery.",
+                    "Implemented product catalog, categories, product images, size/color variants, stock management, cart, wishlist, reviews, and order flow.",
+                    "Designed authentication and authorization with ASP.NET Core Identity, separating Admin and customer workflows.",
+                    "Developed admin features for managing products, users, orders, notifications, support requests, and basic reporting.",
+                    "Added public catalog APIs, admin analytics APIs, demo payment webhook, Swagger UI, OpenAPI documentation, and Postman collection for API testing.",
+                    "Prepared a System Analyst documentation pack including BRD, SRS, Use Cases, ERD, API Specification, and test cases.",
+                    "Integrated payment-related flows including COD, VNPay, MoMo, VietQR, plus SignalR chat hub and Gemini-based product consultation chatbot.",
+                    "Packaged the project with Docker Compose using container webthoitrang, SQL Server container webthoitrang-db, and seeded demo data/accounts.",
+                ],
+            },
+            {
+                "name": "Scant Reports - Data Upload and Report Export Web App (Self-developed Project)",
+                "year": "2026",
+                "github": "https://github.com/xuanbackhoaibu/scant.git",
+                "bullets": [
+                    "Developed a web app for user registration/login, CSV/XLSX upload, data processing, and report generation.",
+                    "Implemented admin/user roles, account management, password reset, audit log, health check, backup/restore, and deployment documentation.",
+                    "Supported exporting reports to HTML, summary CSV, DOCX, and PDF, with customizable HTML/Word report templates.",
+                    "Packaged the application with Docker and added unit tests for safer maintenance.",
+                ],
+            },
+            {
+                "name": "Student Performance - Data Mining Course Project",
+                "year": "2026",
+                "github": "https://github.com/xuanbackhoaibu/student_performance.git",
+                "bullets": [
+                    "Processed Student Performance data using Python, pandas, scikit-learn, mlxtend, matplotlib, and seaborn.",
+                    "Performed data cleaning, EDA, categorical encoding, scaling, stratified train/test split, Apriori association rules, and KMeans clustering.",
+                    "Built and evaluated classification models including Logistic Regression, Decision Tree, Random Forest, and LabelPropagation.",
+                ],
+            },
+        ],
+    }
+
     build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac-System-Analyst.pdf", sa_cv)
     build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac-Backend-NET.pdf", backend_cv)
     build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac-API-Testing.pdf", testing_cv)
-    build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac.pdf", sa_cv)
+    build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac.pdf", default_cv)
     print("All 3 CV PDFs generated successfully!")
 
 

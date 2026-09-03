@@ -1,6 +1,6 @@
 {
   "about": "Profile",
-  "about-intro": "Information Technology student focused on Backend .NET, System Analysis, and API Testing.<br />Builds ASP.NET Core applications, SQL Server databases, reporting tools, and project documentation for practical software workflows.",
+  "about-intro": "Information Technology student focused on Backend .NET and System Analysis.<br />Builds ASP.NET Core applications, SQL Server databases, reporting tools, and project documentation for practical software workflows.",
   "about-tagline": "<strong>About Me</strong><br/>Backend Developer focused on building web applications and REST APIs with C# and ASP.NET Core.<br/>Experienced with authentication, databases, API integration and full-stack academic projects. Currently seeking a .NET Backend Internship to gain production experience.",
   "back-to-home": "Back to home",
   "contact": "Contact",
@@ -11,8 +11,8 @@
   "get-in-touch": "Get in touch",
   "go-to": "Go to",
   "download-cv": "Download CV",
-  "hero-summary": "Backend .NET intern candidate building ASP.NET Core, SQL Server, API testing, reporting tools, and system documentation projects.",
-  "job-title": "Backend .NET / System Analyst Intern",
+  "hero-summary": "Backend .NET Intern/Fresher candidate building ASP.NET Core, SQL Server, reporting tools, and system documentation projects.",
+  "job-title": "Backend .NET Intern/Fresher | System Analysis",
   "learning-api-security": "API security basics: auth, validation, rate limits, error handling.",
   "learning-clean-architecture": ".NET Clean Architecture and maintainable service layers.",
   "learning-docker": "Docker deployment for reviewable portfolio demos.",
