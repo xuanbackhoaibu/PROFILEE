@@ -412,7 +412,8 @@ def main():
     build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac-Backend-NET.pdf", backend_cv)
     build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac-API-Testing.pdf", testing_cv)
     build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac.pdf", default_cv)
-    print("All 3 CV PDFs generated successfully!")
+    build_cv(OUTPUT_DIR / "CV-Tran-Xuan-Bac-2026.pdf", default_cv)
+    print("All CV PDFs generated successfully!")
 
 
 if __name__ == "__main__":

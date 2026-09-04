@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 
-const pdfPath = "public/files/CV-Tran-Xuan-Bac.pdf";
+const pdfPath = "public/files/CV-Tran-Xuan-Bac-2026.pdf";
 const cvHtml = readFileSync("public/files/CV-Tran-Xuan-Bac.html", "utf8");
 const heroVue = readFileSync("src/features/home/components/Hero.vue", "utf8");
 const contactVue = readFileSync("src/features/home/components/Contact.vue", "utf8");
@@ -29,8 +29,8 @@ assert.doesNotMatch(
 
 assert.match(
   cvHtml,
-  /<a\s+href="\.\/CV-Tran-Xuan-Bac\.pdf"\s+download="CV-Tran-Xuan-Bac\.pdf"\s+onclick="downloadPdf\(event\)">Tải CV PDF<\/a>/,
-  "CV page should have direct PDF download link",
+  /<a\s+href="\.\/CV-Tran-Xuan-Bac-2026\.pdf\?v=20260904-2"\s+download="CV-Tran-Xuan-Bac-2026\.pdf"\s+onclick="downloadPdf\(event\)">Tải CV PDF<\/a>/,
+  "CV page should have a cache-busted PDF download link",
 );
 assert.match(
   cvHtml,
