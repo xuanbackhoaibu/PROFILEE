@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build && shx cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "typecheck": "vue-tsc -b",
     "env:copy-example": "shx -- cp -n .env.example .env",

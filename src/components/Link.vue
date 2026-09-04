@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, useAttrs } from "vue";
 import { useRouter } from "../composables/useRouter";
+import { withRouteBase } from "../composables/routeBase";
 
 const attrs = useAttrs();
 const router = useRouter();
@@ -25,6 +26,8 @@ const resolvedTo = computed(() => {
   return path;
 });
 
+const resolvedHref = computed(() => (props.external ? props.href || props.to : withRouteBase(resolvedTo.value)));
+
 const handleClick = (event: MouseEvent) => {
   // Don't interfere with external links or if modifier keys are pressed
   if (props.external || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
@@ -47,7 +50,7 @@ const handleClick = (event: MouseEvent) => {
   <component
     v-if="props.external"
     :is="props.renderAs || 'a'"
-    :href="props.href || props.to"
+    :href="resolvedHref"
     target="_blank"
     rel="noopener noreferrer"
     v-bind="attrs"
@@ -58,7 +61,7 @@ const handleClick = (event: MouseEvent) => {
   <component
     v-else
     :is="props.renderAs || 'a'"
-    :href="resolvedTo"
+    :href="resolvedHref"
     @click="handleClick"
     v-bind="attrs"
   >

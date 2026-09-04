@@ -1,15 +1,17 @@
+import { withRouteBase } from "./routeBase";
+
 export const useRouter = () => {
   const push = (path: string) => {
     if (typeof window !== "undefined") {
       // The intercepted pushState in useRoute.ts will automatically trigger path updates
-      window.history.pushState(null, "", path);
+      window.history.pushState(null, "", withRouteBase(path));
     }
   };
 
   const replace = (path: string) => {
     if (typeof window !== "undefined") {
       // The intercepted replaceState in useRoute.ts will automatically trigger path updates
-      window.history.replaceState(null, "", path);
+      window.history.replaceState(null, "", withRouteBase(path));
     }
   };
 
