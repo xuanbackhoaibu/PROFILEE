@@ -37,6 +37,11 @@ assert.match(
   /BACKEND \.NET INTERN\/FRESHER \| SYSTEM ANALYST INTERN\/FRESHER/,
   "Default CV should target only Backend .NET and System Analysis",
 );
+assert.match(
+  cvHtml,
+  /Information Technology student seeking a Backend \.NET Intern\/Fresher or System Analyst Intern\/Fresher position\.\s+Looking to apply my experience in ASP\.NET Core, databases, REST APIs, and system analysis to real-world software projects\./,
+  "CV career objective should use the shortened target-role summary",
+);
 assert.doesNotMatch(
   cvHtml,
   /API Testing Intern/,
