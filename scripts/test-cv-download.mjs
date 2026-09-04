@@ -69,18 +69,23 @@ assert.doesNotMatch(
 );
 assert.match(
   cvHtml,
-  /WebBanHangOnline - Website thương mại điện tử thời trang \| Dự án cá nhân/,
-  "CV WebBanHangOnline project title should use the shortened Vietnamese version",
+  /WebBanHangOnline - Fashion E-commerce Website \| Personal Project/,
+  "CV WebBanHangOnline project title should use the shortened English version",
 );
 assert.match(
   cvHtml,
-  /Xây dựng hệ thống thương mại điện tử thời trang bằng ASP\.NET Core MVC, Entity Framework Core, SQL Server, Bootstrap và jQuery\./,
+  /Built a fashion e-commerce system using ASP\.NET Core MVC, Entity Framework Core, SQL Server, Bootstrap, and jQuery\./,
   "CV WebBanHangOnline project should include the shortened stack summary",
 );
 assert.match(
   cvHtml,
-  /Phân tích và xây dựng tài liệu hệ thống gồm BRD, SRS, Use Case, ERD, API Specification, OpenAPI\/Swagger, Postman và API test cases\./,
+  /Analyzed and prepared system documentation including BRD, SRS, Use Case, ERD, API Specification, OpenAPI\/Swagger, Postman, and API test cases\./,
   "CV WebBanHangOnline project should include the system documentation summary",
+);
+assert.doesNotMatch(
+  cvHtml,
+  /Website thương mại điện tử thời trang|Xây dựng hệ thống thương mại điện tử|Phân tích và xây dựng tài liệu/,
+  "CV WebBanHangOnline project should stay in English",
 );
 assert.doesNotMatch(
   cvHtml,

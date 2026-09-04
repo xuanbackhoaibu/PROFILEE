@@ -373,15 +373,15 @@ def main():
         ],
         "projects": [
             {
-                "name": "WebBanHangOnline - Website thương mại điện tử thời trang | Dự án cá nhân",
+                "name": "WebBanHangOnline - Fashion E-commerce Website | Personal Project",
                 "year": "2026",
                 "github": "https://github.com/xuanbackhoaibu/WebBanHangOnline.git",
                 "bullets": [
-                    "Xây dựng hệ thống thương mại điện tử thời trang bằng ASP.NET Core MVC, Entity Framework Core, SQL Server, Bootstrap và jQuery.",
-                    "Phát triển quản lý sản phẩm/danh mục, biến thể sản phẩm, tồn kho, giỏ hàng, danh sách yêu thích, đánh giá, đơn hàng và luồng Admin/Customer với ASP.NET Core Identity.",
-                    "Phát triển REST API, luồng thanh toán (COD, VNPay, MoMo, VietQR), chat thời gian thực với SignalR và chatbot tư vấn sản phẩm sử dụng Gemini.",
-                    "Phân tích và xây dựng tài liệu hệ thống gồm BRD, SRS, Use Case, ERD, API Specification, OpenAPI/Swagger, Postman và API test cases.",
-                    "Đóng gói ứng dụng và SQL Server bằng Docker Compose, đồng thời chuẩn bị dữ liệu demo để triển khai và chạy thử trên môi trường local.",
+                    "Built a fashion e-commerce system using ASP.NET Core MVC, Entity Framework Core, SQL Server, Bootstrap, and jQuery.",
+                    "Developed product/category management, product variants, inventory, cart, wishlist, reviews, orders, and Admin/Customer flows with ASP.NET Core Identity.",
+                    "Developed REST APIs, payment flows (COD, VNPay, MoMo, VietQR), real-time chat with SignalR, and a Gemini-based product consultation chatbot.",
+                    "Analyzed and prepared system documentation including BRD, SRS, Use Case, ERD, API Specification, OpenAPI/Swagger, Postman, and API test cases.",
+                    "Containerized the application and SQL Server with Docker Compose, and prepared demo data for local deployment and testing.",
                 ],
             },
             {
