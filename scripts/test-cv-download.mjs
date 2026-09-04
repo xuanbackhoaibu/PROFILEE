@@ -13,13 +13,13 @@ assert.equal(existsSync(pdfPath), true, `CV PDF file should exist: ${pdfPath}`);
 
 assert.match(
   heroVue,
-  /const cvPagePath = `\$\{import\.meta\.env\.BASE_URL\}files\/CV-Tran-Xuan-Bac\.html`;/,
-  "Hero Download CV button should open the CV page first",
+  /const cvPagePath = `\$\{import\.meta\.env\.BASE_URL\}files\/CV-Tran-Xuan-Bac\.html\?v=3770190`;/,
+  "Hero Download CV button should open the cache-busted CV page first",
 );
 assert.match(
   contactVue,
-  /const cvPagePath = `\$\{import\.meta\.env\.BASE_URL\}files\/CV-Tran-Xuan-Bac\.html`;/,
-  "Contact Download CV link should open the CV page first",
+  /const cvPagePath = `\$\{import\.meta\.env\.BASE_URL\}files\/CV-Tran-Xuan-Bac\.html\?v=3770190`;/,
+  "Contact Download CV link should open the cache-busted CV page first",
 );
 assert.doesNotMatch(
   heroVue,
