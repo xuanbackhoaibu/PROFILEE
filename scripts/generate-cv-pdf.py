@@ -373,18 +373,15 @@ def main():
         ],
         "projects": [
             {
-                "name": "WebBanHangOnline - Online Fashion E-commerce Website (ASP.NET Core, Solo Project)",
+                "name": "WebBanHangOnline - Website thương mại điện tử thời trang | Dự án cá nhân",
                 "year": "2026",
                 "github": "https://github.com/xuanbackhoaibu/WebBanHangOnline.git",
                 "bullets": [
-                    "Built an online fashion store using ASP.NET Core MVC, Razor Pages, Entity Framework Core, SQL Server, Bootstrap, and jQuery.",
-                    "Implemented product catalog, categories, product images, size/color variants, stock management, cart, wishlist, reviews, and order flow.",
-                    "Designed authentication and authorization with ASP.NET Core Identity, separating Admin and customer workflows.",
-                    "Developed admin features for managing products, users, orders, notifications, support requests, and basic reporting.",
-                    "Added public catalog APIs, admin analytics APIs, demo payment webhook, Swagger UI, OpenAPI documentation, and Postman collection for API testing.",
-                    "Prepared a System Analyst documentation pack including BRD, SRS, Use Cases, ERD, API Specification, and test cases.",
-                    "Integrated payment-related flows including COD, VNPay, MoMo, VietQR, plus SignalR chat hub and Gemini-based product consultation chatbot.",
-                    "Packaged the project with Docker Compose using container webthoitrang, SQL Server container webthoitrang-db, and seeded demo data/accounts.",
+                    "Xây dựng hệ thống thương mại điện tử thời trang bằng ASP.NET Core MVC, Entity Framework Core, SQL Server, Bootstrap và jQuery.",
+                    "Phát triển quản lý sản phẩm/danh mục, biến thể sản phẩm, tồn kho, giỏ hàng, danh sách yêu thích, đánh giá, đơn hàng và luồng Admin/Customer với ASP.NET Core Identity.",
+                    "Phát triển REST API, luồng thanh toán (COD, VNPay, MoMo, VietQR), chat thời gian thực với SignalR và chatbot tư vấn sản phẩm sử dụng Gemini.",
+                    "Phân tích và xây dựng tài liệu hệ thống gồm BRD, SRS, Use Case, ERD, API Specification, OpenAPI/Swagger, Postman và API test cases.",
+                    "Đóng gói ứng dụng và SQL Server bằng Docker Compose, đồng thời chuẩn bị dữ liệu demo để triển khai và chạy thử trên môi trường local.",
                 ],
             },
             {

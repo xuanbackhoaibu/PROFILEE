@@ -67,6 +67,26 @@ assert.doesNotMatch(
   /Analysis & Testing/,
   "CV skills should not include the removed Analysis & Testing group",
 );
+assert.match(
+  cvHtml,
+  /WebBanHangOnline - Website thương mại điện tử thời trang \| Dự án cá nhân/,
+  "CV WebBanHangOnline project title should use the shortened Vietnamese version",
+);
+assert.match(
+  cvHtml,
+  /Xây dựng hệ thống thương mại điện tử thời trang bằng ASP\.NET Core MVC, Entity Framework Core, SQL Server, Bootstrap và jQuery\./,
+  "CV WebBanHangOnline project should include the shortened stack summary",
+);
+assert.match(
+  cvHtml,
+  /Phân tích và xây dựng tài liệu hệ thống gồm BRD, SRS, Use Case, ERD, API Specification, OpenAPI\/Swagger, Postman và API test cases\./,
+  "CV WebBanHangOnline project should include the system documentation summary",
+);
+assert.doesNotMatch(
+  cvHtml,
+  /Developed admin features for managing products/,
+  "CV WebBanHangOnline project should not include the longer old English bullet list",
+);
 assert.doesNotMatch(
   cvHtml,
   /API Testing Intern/,
