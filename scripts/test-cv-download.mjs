@@ -34,7 +34,7 @@ assert.match(
 );
 assert.match(
   cvHtml,
-  /Backend \.NET Intern\/Fresher \| System Analysis/,
+  /BACKEND \.NET INTERN\/FRESHER \| SYSTEM ANALYST INTERN\/FRESHER/,
   "Default CV should target only Backend .NET and System Analysis",
 );
 assert.doesNotMatch(

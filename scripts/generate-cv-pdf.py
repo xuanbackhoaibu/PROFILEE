@@ -363,7 +363,7 @@ def main():
     }
 
     default_cv = {
-        "title": "BACKEND .NET INTERN/FRESHER | SYSTEM ANALYSIS",
+        "title": "BACKEND .NET INTERN/FRESHER | SYSTEM ANALYST INTERN/FRESHER",
         "objective": "Information Technology student seeking Backend .NET Intern/Fresher and System Analysis opportunities. Hands-on experience building ASP.NET Core MVC/Web API applications, SQL Server databases, authentication/authorization, REST APIs, reporting tools, Docker-based local demos, and system analysis documentation. Eager to contribute to real software projects while improving backend service design, requirement analysis, API quality, and documentation skills.",
         "skills": [
             ("Languages", "C#, Python, JavaScript, SQL"),
