@@ -1,4 +1,8 @@
-import backendWorkspace from "../../../assets/images/profile/backend-workspace.png";
+import studentEda from "../../../assets/images/profile/01_eda.png";
+import studentPatternMining from "../../../assets/images/profile/03_pattern_mining.png";
+import studentClustering from "../../../assets/images/profile/04_clustering.png";
+import studentClassification from "../../../assets/images/profile/05_classification.png";
+import studentEvaluation from "../../../assets/images/profile/07_evaluation.png";
 
 import type { ProjectContent } from "../../types";
 
@@ -14,9 +18,40 @@ export default {
       type: "media",
       props: {
         type: "image",
-        src: backendWorkspace,
-        alt: "Không gian làm việc phân tích dữ liệu",
-        caption: "Pipeline dữ liệu Student Performance",
+        src: studentEda,
+        alt: "Biểu đồ phân phối điểm cuối kỳ trong bộ dữ liệu Student Performance",
+        caption: "EDA thể hiện phân phối điểm cuối kỳ của học sinh.",
+      },
+    },
+    {
+      type: "gallery",
+      props: {
+        eyebrow: "Minh chứng notebook",
+        title: "Kết quả workflow khai phá dữ liệu",
+        description:
+          "Các ảnh thể hiện quy trình từ khám phá dữ liệu đến khai phá luật kết hợp, phân cụm, phân loại và đánh giá mô hình.",
+        items: [
+          {
+            src: studentPatternMining,
+            alt: "Luật kết hợp được tạo bằng Apriori",
+            caption: "Luật kết hợp Apriori với các chỉ số support, confidence, lift, leverage và conviction.",
+          },
+          {
+            src: studentClustering,
+            alt: "Biểu đồ Elbow Method cho phân cụm KMeans",
+            caption: "Chọn số cụm KMeans bằng Elbow Method trước khi phân nhóm học sinh.",
+          },
+          {
+            src: studentClassification,
+            alt: "Ma trận nhầm lẫn cho bài toán dự đoán kết quả học sinh",
+            caption: "Kết quả phân loại được tóm tắt bằng ma trận nhầm lẫn giữa nhãn dự đoán và nhãn thực tế.",
+          },
+          {
+            src: studentEvaluation,
+            alt: "Đường cong ROC để đánh giá mô hình Student Performance",
+            caption: "Đường cong ROC thể hiện khả năng phân biệt lớp của mô hình.",
+          },
+        ],
       },
     },
     {

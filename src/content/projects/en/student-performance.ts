@@ -1,4 +1,8 @@
-import backendWorkspace from "../../../assets/images/profile/backend-workspace.png";
+import studentEda from "../../../assets/images/profile/01_eda.png";
+import studentPatternMining from "../../../assets/images/profile/03_pattern_mining.png";
+import studentClustering from "../../../assets/images/profile/04_clustering.png";
+import studentClassification from "../../../assets/images/profile/05_classification.png";
+import studentEvaluation from "../../../assets/images/profile/07_evaluation.png";
 
 import type { ProjectContent } from "../../types";
 
@@ -14,9 +18,40 @@ export default {
       type: "media",
       props: {
         type: "image",
-        src: backendWorkspace,
-        alt: "Data analysis workspace",
-        caption: "Student performance data pipeline",
+        src: studentEda,
+        alt: "Distribution of final grades in the Student Performance dataset",
+        caption: "EDA view showing the distribution of final student grades.",
+      },
+    },
+    {
+      type: "gallery",
+      props: {
+        eyebrow: "Notebook proof",
+        title: "Data mining workflow outputs",
+        description:
+          "The screenshots show the project moving from exploration into pattern mining, clustering, classification, and final evaluation.",
+        items: [
+          {
+            src: studentPatternMining,
+            alt: "Association rules generated with Apriori",
+            caption: "Apriori association rules with support, confidence, lift, leverage, and conviction metrics.",
+          },
+          {
+            src: studentClustering,
+            alt: "Elbow method chart for KMeans clustering",
+            caption: "KMeans cluster selection using the elbow method before grouping similar students.",
+          },
+          {
+            src: studentClassification,
+            alt: "Classification confusion matrix for student performance prediction",
+            caption: "Classification result summarized with a confusion matrix for predicted vs. actual outcomes.",
+          },
+          {
+            src: studentEvaluation,
+            alt: "ROC curve for student performance model evaluation",
+            caption: "ROC curve evaluation showing the model's class-separation behavior.",
+          },
+        ],
       },
     },
     {

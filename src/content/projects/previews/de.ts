@@ -1,4 +1,5 @@
 import backendWorkspace from "../../../assets/images/profile/backend-workspace.png";
+import studentEda from "../../../assets/images/profile/01_eda.png";
 import webbanhangHome from "../../../assets/images/projects/source-profile/webbanhang-home.jpg";
 
 import type { ProjectPreview } from "../../types";
@@ -25,7 +26,7 @@ export default [
   {
     title: "Student Performance",
     slug: "student-performance",
-    thumbnail: backendWorkspace,
+    thumbnail: studentEda,
     description: "Khai phá dữ liệu và Machine Learning",
     role: "Data Analysis",
     stack: ["Python", "Pandas", "ML"],
