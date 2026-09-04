@@ -49,7 +49,7 @@ assert.match(
 );
 assert.match(
   enMessages + viMessages,
-  /Backend \.NET Intern\/Fresher \| System Analysis/,
+  /BACKEND \.NET DEVELOPER \| SYSTEM ANALYST/,
   "Portfolio hero title should target only Backend .NET and System Analysis",
 );
 assert.doesNotMatch(

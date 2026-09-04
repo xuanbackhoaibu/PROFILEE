@@ -2,6 +2,8 @@
 
 Personal portfolio site for Backend .NET, System Analysis, API Testing, and software project case studies.
 
+Live site: https://xuanbackhoaibu.github.io/PROFILEE/
+
 Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Lenis**, 3D via **three.js**, audio via **Howler**. GLSL is compiled through **vite-plugin-glsl**.
 
 ## Scripts
