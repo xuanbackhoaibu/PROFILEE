@@ -42,6 +42,31 @@ assert.match(
   /Information Technology student seeking a Backend \.NET Intern\/Fresher or System Analyst Intern\/Fresher position\.\s+Looking to apply my experience in ASP\.NET Core, databases, REST APIs, and system analysis to real-world software projects\./,
   "CV career objective should use the shortened target-role summary",
 );
+assert.match(
+  cvHtml,
+  /<div><strong>Languages:<\/strong><\/div>\s+<div>C#, Python, JavaScript, SQL, HTML\/CSS<\/div>/,
+  "CV skills should include the requested languages",
+);
+assert.match(
+  cvHtml,
+  /<div><strong>Backend:<\/strong><\/div>\s+<div>C#, ASP\.NET Core MVC\/Web API, Entity Framework Core, RESTful API, ASP\.NET Core Identity<\/div>/,
+  "CV skills should include the requested backend stack",
+);
+assert.match(
+  cvHtml,
+  /<div><strong>Database:<\/strong><\/div>\s+<div>SQL Server, PostgreSQL, MySQL, SQLite<\/div>/,
+  "CV skills should include the requested databases",
+);
+assert.match(
+  cvHtml,
+  /<div><strong>Tools & Others:<\/strong><\/div>\s+<div>Git, GitHub, Docker, Docker Compose, Postman, Bootstrap, jQuery, Gemini API<\/div>/,
+  "CV skills should include the requested tools",
+);
+assert.doesNotMatch(
+  cvHtml,
+  /Analysis & Testing/,
+  "CV skills should not include the removed Analysis & Testing group",
+);
 assert.doesNotMatch(
   cvHtml,
   /API Testing Intern/,

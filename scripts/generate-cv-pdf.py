@@ -366,11 +366,10 @@ def main():
         "title": "BACKEND .NET INTERN/FRESHER | SYSTEM ANALYST INTERN/FRESHER",
         "objective": "Information Technology student seeking a Backend .NET Intern/Fresher or System Analyst Intern/Fresher position. Looking to apply my experience in ASP.NET Core, databases, REST APIs, and system analysis to real-world software projects.",
         "skills": [
-            ("Languages", "C#, Python, JavaScript, SQL"),
-            ("Backend", "C#, ASP.NET Core MVC/Web API, Entity Framework Core, RESTful API, ASP.NET Core Identity, SignalR, authentication/authorization"),
-            ("Database", "SQL Server, PostgreSQL, MySQL, SQLite, database design, ERD, EF migrations, relational schema design"),
-            ("Analysis & Testing", "Use Case, requirement analysis, API specification, Postman, API testing, workflow documentation"),
-            ("Tools & Others", "Git, GitHub, Docker, Docker Compose, Swagger/OpenAPI, Postman, Bootstrap, jQuery, pandas, scikit-learn, Gemini API"),
+            ("Languages", "C#, Python, JavaScript, SQL, HTML/CSS"),
+            ("Backend", "C#, ASP.NET Core MVC/Web API, Entity Framework Core, RESTful API, ASP.NET Core Identity"),
+            ("Database", "SQL Server, PostgreSQL, MySQL, SQLite"),
+            ("Tools & Others", "Git, GitHub, Docker, Docker Compose, Postman, Bootstrap, jQuery, Gemini API"),
         ],
         "projects": [
             {
